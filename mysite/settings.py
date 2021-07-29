@@ -11,8 +11,12 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 from pathlib import Path
+import django_heroku
+import django_on_heroku
+import settings
 import os
 
+django_heroku.settings(locals())
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -124,7 +128,5 @@ STATIC_URL = '/static/'
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
-DEFAULT_AUTO_FIELD = 'djan4
-
-`go.db.models.BigAutoField'
-django_on_heroku = settins(locals())
+DEFAULT_AUTO_FIELD = 'djan4`go.db.models.BigAutoField'
+django_on_heroku = settings(locals())
